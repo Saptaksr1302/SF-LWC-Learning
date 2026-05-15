@@ -1,0 +1,6 @@
+@import 'c/sharedCss';
+
+.html{
+    width: 80%;
+    background-color: #4caf50;
+}

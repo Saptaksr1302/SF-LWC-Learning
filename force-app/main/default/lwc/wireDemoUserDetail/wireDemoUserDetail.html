@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="User Detail using @wire as Function">
+        <div class="slds-m-around_medium">
+            <!-- {userId} -->
+             <template if:true={userDetail}>
+                <div>Email - {userDetail.Email.value}</div>
+                <div>Name - {userDetail.Name.value}</div>
+             </template>
+        </div>
+    </lightning-card>
+
+    <div class="slds-m-top_medium"></div>
+    <lightning-card title="User Detail using @wire as Property">
+        <div class="slds-m-around_medium">
+            <!-- {userId} -->
+             <template if:true={userDetailProperty.data}>
+                <div>Email - {userDetailProperty.data.fields.Email.value}</div>
+                <div>Name - {userDetailProperty.data.fields.Name.value}</div>
+             </template>
+        </div>
+    </lightning-card>
+</template>

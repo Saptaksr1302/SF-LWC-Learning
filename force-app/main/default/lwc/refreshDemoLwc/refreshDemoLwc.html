@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Refresh APEX Demo" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+            <!-- {isContactAvailable} -->
+             <template if:true={contact.data}>
+                <lightning-datatable key-field="Id" data={contact.data} columns={columns} onsave={saveHandler} draft-values={draftValues}></lightning-datatable>
+             </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+/*element, classes, pseudo */
+
+p{
+    color: green;
+    font-size: 20px;
+    border: 1px solid orange;
+}
+
+.course{
+    color: pink;
+    font-size: 15px;
+}
+
+.course:hover{
+    font-size: 20px;
+    color: yellow;
+}

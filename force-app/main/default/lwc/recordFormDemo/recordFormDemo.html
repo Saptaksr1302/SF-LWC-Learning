@@ -1,0 +1,53 @@
+<template>
+    <lightning-card title="Create Record using lightning-record-form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form object-api-name={objectName}
+            fields={fieldList} onsuccess={successHandler}></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <div class="slds-m-top_small"></div>
+    <lightning-card title="First Created Record Form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+            record-id="001HF00000Dc1IFYAZ" object-api-name={objectName}
+            fields={fieldList} columns="2"></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <div class="slds-m-top_small"></div>
+    <lightning-card title="First Created Record Form in View Mode">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+            record-id="001HF00000Dc1IFYAZ" object-api-name={objectName}
+            fields={fieldList} mode="readonly" columns="2"></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <div class="slds-m-top_small"></div>
+    <lightning-card title="Edit Record Form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+            record-id="001HF00000Dc1IFYAZ" object-api-name={objectName}
+            fields={fieldList} mode="edit" columns="2"></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <!-- <div class="slds-m-top_small"></div>
+    <lightning-card title="Edit Record Form with Layout">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+            record-id={recordId} object-api-name={objectApiName}
+            layout-type="Compact" mode="edit" columns="2"></lightning-record-form>
+        </div>
+    </lightning-card> -->
+
+    <div class="slds-m-top_small"></div>
+    <lightning-card title="Edit Record Form with Layout">
+        <div class="slds-p-around_xx-large">
+            <lightning-record-form
+            record-id= "001HF00000Dc1IFYAZ" object-api-name={objectName}
+            layout-type="Compact" mode="edit" columns="2"></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

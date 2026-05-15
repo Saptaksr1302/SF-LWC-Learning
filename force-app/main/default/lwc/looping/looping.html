@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="for:each loop">
+        <div class="slds-m-around_medium">
+            <template for:each={carList} for:item="carItem">
+                <ul class="slds-has-dividers_around-space" key={car}>
+                    <li class="slds-item">{carItem}</li>
+                    </ul>
+            </template>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="iterator loop">
+        <div class="slds-m-around_medium">
+            <template iterator:emp={empList}>
+                <div key={emp.value.id}>
+                    <ul class="slds-has-dividers_around-space">
+                        <template if:true={emp.first}>
+                            <div class="slds-box slds-theme_shade">
+                                <strong>
+                                    List of Employees of Capgemini
+                                </strong>
+                            </div>
+                        </template>
+                        <li class="slds-item"><strong>{emp.value.company}</strong>: {emp.value.name}</li>
+                        <template if:true={emp.last}>
+                            <div class="slds-box slds-theme_shade">
+                                <strong>
+                                    Thanks for reading the list
+                                </strong>
+                            </div>
+                        </template>
+                        </ul>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+    
+
+    <lightning-card title="for:each loop with Array of Objects">
+        <div class="slds-m-around_medium">
+            <template for:each={empList} for:item="currentEmp">
+                <ul class="slds-has-dividers_around-space" key={currentEmp.id}>
+                    <li class="slds-item">{currentEmp.name} - {currentEmp.company}</li>
+                    </ul>
+            </template>
+        </div>
+    </lightning-card>
+
+</template>

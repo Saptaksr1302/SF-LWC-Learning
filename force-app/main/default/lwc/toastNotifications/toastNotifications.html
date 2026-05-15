@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Toast Notifications Demo">
+        <lightning-button variant="brand" label="Toast Me" onclick={toastHandler} class="slds-p-left_medium"></lightning-button>
+        <button class="slds-button slds-button_destructive slds-m-left_xx-small" onclick={toastErrorHandler}>Toast Me</button>
+        <button class="slds-button slds-button_outline-brand slds-p-left_medium" onclick={toastWarningHandler}>Toast Me</button>
+        <button class="slds-button slds-button_neutral slds-p-left_medium" onclick={toastInfoHandler}>Toast Me</button>
+    </lightning-card>
+</template>
