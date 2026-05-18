@@ -1,18 +1,33 @@
-# Salesforce DX Project: Next Steps
+# LWC Learning Repository (Udemy Course Practice)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This repository contains the **Apex classes** and **Lightning Web Components (LWC)** developed while learning Salesforce LWC through a **Udemy course**.
 
-## How Do You Plan to Deploy Your Changes?
+It serves as a structured collection of hands-on exercises, examples, and mini-projects created during the learning journey, helping reinforce both frontend and backend development concepts on the Salesforce platform.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+---
 
-## Configure Your Salesforce DX Project
+## Overview
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+This project is a **learning-focused repository** where core Salesforce development concepts were implemented step-by-step as part of a guided Udemy course.
 
-## Read All About It
+The repository demonstrates:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- Fundamentals of **Lightning Web Components (LWC)**
+- Backend development using **Apex**
+- Integration between LWC and Apex
+- Component-based UI development
+- Best practices for Salesforce development
+
+---
+
+## Learning Objectives
+
+During the course, the following skills were developed:
+
+- Understanding LWC architecture and lifecycle
+- Building reusable UI components
+- Using `@wire` and imperative Apex calls
+- Handling events and user interactions
+- Working with Salesforce data using Apex
+- Creating test classes for Apex
+- Debugging and improving performance
